@@ -506,6 +506,7 @@ img {
   background: linear-gradient(160deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
   color: #fff;
   padding: 90px 0;
+  scroll-margin-top: 90px;
 }
 
 .trial__inner {
@@ -657,6 +658,14 @@ img {
 }
 
 @media (max-width: 720px) {
+  .trial {
+    padding: 64px 0;
+  }
+
+  .trial__form {
+    padding: 24px 20px;
+  }
+
   .nav {
     position: fixed;
     top: 78px;

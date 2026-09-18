@@ -51,3 +51,15 @@ const yearEl = document.getElementById("year");
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
+
+// Témoignages du hero
+const reviews = document.querySelectorAll(".hero__review");
+let activeReview = 0;
+
+if (reviews.length > 1) {
+  window.setInterval(() => {
+    reviews[activeReview].classList.remove("is-active");
+    activeReview = (activeReview + 1) % reviews.length;
+    reviews[activeReview].classList.add("is-active");
+  }, 4200);
+}

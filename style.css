@@ -245,6 +245,7 @@ img {
   align-items: center;
   justify-content: center;
   min-height: 410px;
+  margin-bottom: 37px;
 }
 
 .hero__circle {
@@ -269,10 +270,10 @@ img {
 
 .hero__card {
   position: absolute;
-  bottom: 100px;
-  left: -88px;
+  bottom: 92px;
+  left: calc(50% - 150px);
   background: #fff;
-  padding: 20px 26px;
+  padding: 6px 12px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   text-align: center;
@@ -280,19 +281,19 @@ img {
 
 .hero__card-title {
   font-family: var(--font-title);
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   color: var(--color-primary);
   font-weight: 700;
 }
 
 .hero__card-sub {
-  font-size: 0.85rem;
+  font-size: 0.65rem;
   color: var(--color-text-light);
 }
 
 .hero__reviews {
   position: absolute;
-  bottom: 0;
+  bottom: -37px;
   left: 50%;
   width: min(100%, 280px);
   height: 82px;
@@ -699,7 +700,7 @@ img {
 
   .hero__visual {
     order: -1;
-    min-height: 220px;
+    min-height: 410px;
   }
 
   .trial__inner {
